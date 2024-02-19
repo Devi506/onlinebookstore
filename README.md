@@ -1,1 +1,1 @@
-# onlinebookstore
+This is a simple BookStore website built using HTML, CSS, and JavaScript. It features a responsive design, Swiper.js integration for sliders, and FontAwesome icons. The website includes sections for featured books, categories, deals, reviews, and feedback.# onlinebookstore
