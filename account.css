@@ -1,0 +1,47 @@
+* {
+    background-color: #29ADB2;
+    margin: auto;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: white;
+    width: 325px;
+    height: 70vh;
+    border: 2px solid black;
+    box-shadow: 0 0 10px white;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    font-size: 100%;
+}
+
+.box {
+    background-color: white;
+}
+
+.box1 {
+    background-color: white;
+}
+
+.SUbButton {
+    background-color: #c7c1c1c7;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+}
+
+.error {
+    color: red;
+    background-color: white;
+}
+
+.errorMessage {
+    font-size: 14px;
+    margin-top: 5px;
+}

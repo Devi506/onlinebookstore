@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>
+        Feedback form
+    </title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            margin: 0;
+            border-radius: 10px;
+            border: solid;
+            background-color: white;
+
+        }
+
+        .box::placeholder {
+            color: #999;/* Set the color of the placeholder text */
+            font-style: italic;/* Optionally, make the placeholder italic */
+            text-align: center;/* position of the placeholder  */
+        }
+
+
+        button {
+            background-color: #999;
+            color: black;
+            height: 3rem;
+            border:solid;
+            width: 6rem;
+           
+            font-size: 1rem;
+            border-radius: 10px;
+            /* You can adjust the value to control the roundness of the border */
+        }
+
+        button:hover {
+            background-color: #29ADB2;
+        }
+
+        *{
+           background-color: #29ADB2;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2>FEEDBACK FORM</h2>
+        <form action="" method="post" id="feedbackForm">
+            <input type="text" name="feedback" class="box" id="feedbackInput"
+                placeholder="Write your feedback here...."><br><br>
+            <button type="button" onclick="submitFeedback()">Submit</button>
+        </form>
+    </center>
+    <script>
+        function submitFeedback() {
+            var feedbackInput = document.getElementById("feedbackInput").value;
+
+            if (feedbackInput !== "") {
+                alert("Thanks for your valuable feedback!" ,location.replace("Book.html"));
+                //I used location.replace for shifting in Book.html page
+                // You might want to submit the form to the server here if needed
+            }
+            else {
+                alert("Please provide feedback about our page");
+            }
+        }
+    </script>
+</body>
+
+</html>
